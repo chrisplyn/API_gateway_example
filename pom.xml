@@ -67,6 +67,7 @@
 
 		<!-- util -->
 		<commons-io.version>2.6</commons-io.version>
+        <spring-cloud-dependencies.version>Greenwich.RELEASE</spring-cloud-dependencies.version>
 
 		<!-- Maven plugins -->
 		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
@@ -89,6 +90,8 @@
 
 		<module>oauth-authorization-server</module>
         <module>oauth-zuul-gateway</module>
+		<module>spring-cloud-eureka-server</module>
+
 		
 		<module>oauth-jws-jwk\oauth-authorization-server-jws-jwk</module>
 		<module>oauth-jws-jwk\oauth-resource-server-jws-jwk</module>

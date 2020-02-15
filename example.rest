@@ -1,0 +1,10 @@
+POST http://localhost:8080/oauth/token
+Authorization: Basic Zm9vQ2xpZW50SWRQYXNzd29yZDpzZWNyZXQ=
+Content-Type: application/x-www-form-urlencoded
+Cache-Control: no-cache
+
+grant_type=password&password=123&username=john
+
+
+GET http://localhost:8080/spring-security-oauth-resource/users/extra
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqb2huIiwic2NvcGUiOlsiZm9vIiwicmVhZCIsIndyaXRlIl0sIm9yZ2FuaXphdGlvbiI6ImpvaG5qRlF5IiwiZXhwIjoxNTgxNzM1NTk5LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiOTZhM2YxZjktMzgwZS00MjkzLWE2NTQtMWIwMTVjZTllM2MzIiwiY2xpZW50X2lkIjoiZm9vQ2xpZW50SWRQYXNzd29yZCJ9.Z61d-hVKfUZrVPcK1Sc-Qa2EgAGqvA8309mnAPfxA6s
