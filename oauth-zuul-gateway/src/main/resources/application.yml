@@ -1,5 +1,6 @@
 server:
   port: 8080
+
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie
   routes:
@@ -7,10 +8,9 @@ zuul:
       path: /oauth/**
       serviceId: oauthservice
       stripPrefix: false
-
-  #   spring-security-oauth-resource:
-  #     path: /spring-security-oauth-resource/**
-  #     url: http://localhost:8082/spring-security-oauth-resource
+    resource:
+      path: /resource/**
+      serviceId: resource1
 
 spring:
   application:

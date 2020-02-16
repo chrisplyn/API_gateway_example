@@ -24,7 +24,7 @@ public class OAuth2ResourceServerConfigJwt extends ResourceServerConfigurerAdapt
     @Override
     public void configure(final HttpSecurity http) throws Exception {
         // @formatter:off
-                http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)
+                http.csrf().disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)
                     .and()
                     .authorizeRequests().anyRequest().permitAll();
         // @formatter:on                
